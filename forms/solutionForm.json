@@ -1,0 +1,177 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "subject",
+                        "label": "Subject",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "custom-regex": "",
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.sample.CustomFileUpload",
+                    "properties": {
+                        "attachment": "",
+                        "dbDriver": "com.mysql.jdbc.Driver",
+                        "dbHost": "jdbc:mysql://localhost:3306/jwdb6?characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true",
+                        "dbPassword": "12345678",
+                        "dbTable": "solution",
+                        "dbUsername": "root",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "uploadDoc",
+                        "label": "Upload Document",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "password": "admin",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "true",
+                        "size": "",
+                        "url": "#envVariable.endPoint#",
+                        "username": "admin",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.BeanShellValidator",
+                            "properties": {
+                                "decoration": "*",
+                                "script": "import java.util.Arrays;\nimport org.joget.apps.app.service.AppUtil;\nimport org.joget.apps.form.model.Element;\nimport org.joget.apps.form.model.Form;\nimport org.joget.apps.form.model.FormData;\nimport org.joget.apps.form.service.FormUtil;\npublic boolean validate(Element element, FormData formData, String[] values) {\n    boolean result = true;\n    /*String id = FormUtil.getElementParameterName(element);\n\n    if(values[0].contains(\"<\") || values[0].contains(\">\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( < ) หรือ ( > )\");\n        result = false;\n    }\n    if(values[0].contains(\":\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( : )\");\n        result = false;\n    }\n    if(values[0].contains(\"|\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( | )\");\n        result = false;\n    }\n    if(values[0].contains(\"?\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( ? )\");\n        result = false;\n    }\n    if(values[0].contains(\"*\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( * )\");\n        result = false;\n    }\n    if(values[0].contains(\"\\\"\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( \\\" )\");\n        result = false;\n    }\n if(values[0].contains(\"%\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( % )\");\n        result = false;\n    }\n if(values[0].contains(\"+\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( + )\");\n        result = false;\n    }\n if(values[0].contains(\";\")){\n        formData.addFormError(id, \"ห้ามใส่เครื่องหมาย ( ; )\");\n        result = false;\n    }\n    if(!values[0].trim().equalsIgnoreCase(\"\")){\n        String value = values[0].trim();\n        if(!value.equalsIgnoreCase(values[0])){            \n            formData.addFormError(id, \"ข้อมูลมีการเว้นวรรคข้างหน้าหรือหลัง กรุณาลบออก\");\n            result = false;\n        }\n    }\n    else{\n        formData.addFormError(id, \"Missing required value\");\n        result = false;\n    }*/\n    return result;\n}\n \n//call validate method with injected variable\nreturn validate(element, formData, values);"
+                            }
+                        }
+                    }
+                },
+                {
+                    "className": "org.joget.sample.CustomFileUpload",
+                    "properties": {
+                        "attachment": "",
+                        "dbDriver": "com.mysql.jdbc.Driver",
+                        "dbHost": "jdbc:mysql://localhost:3306/jwdb6?characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true",
+                        "dbPassword": "12345678",
+                        "dbTable": "solution",
+                        "dbUsername": "root",
+                        "fileType": "",
+                        "fileTypeMsg": "Invalid file type",
+                        "id": "uploadDoc2",
+                        "label": "Custom FileUpload",
+                        "maxSize": "",
+                        "maxSizeMsg": "File size limit exceeded",
+                        "multiple": "true",
+                        "padding": "",
+                        "password": "admin",
+                        "permissionType": "",
+                        "readonly": "",
+                        "removeFile": "true",
+                        "size": "",
+                        "url": "#envVariable.endPoint#",
+                        "username": "admin",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        }
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "selectUser1",
+                        "label": "Select User 1",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.UserOptionsBinder",
+                            "properties": {
+                                "addEmptyOption": "true",
+                                "cacheIdlePause": "120",
+                                "cacheInterval": "",
+                                "deptId": "",
+                                "emptyLabel": "",
+                                "groupId": "",
+                                "grouping": "",
+                                "optionLabel": "fullname",
+                                "orgId": "",
+                                "useAjax": ""
+                            }
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "custom-regex": "",
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": "user1"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "status",
+                        "useDefaultWhenEmpty": "",
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section1",
+            "label": "Submit Form",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "solutionForm",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "01 Upload Doc Form",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "solution"
+    }
+}
