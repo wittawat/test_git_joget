@@ -1,0 +1,134 @@
+{
+    "actions": [],
+    "binder": {
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+        "properties": {"formDefId": "uploadCoverFrom"}
+    },
+    "buttonPosition": "bottomLeft",
+    "checkboxPosition": "left",
+    "columns": [
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.tutorial.FileLinkDatalistFormatter",
+                "properties": {
+                    "attachment": "true",
+                    "formDefId": "targetGoverForm"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_0",
+            "label": "Target Cover",
+            "name": "targetCover",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "id": "column_2",
+            "label": "Upload Document",
+            "name": "uploadDoc"
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "org.joget.tutorial.FileLinkDatalistFormatter",
+                "properties": {
+                    "attachment": "true",
+                    "formDefId": "uploadCoverFrom"
+                }
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_3",
+            "label": "Upload PDF to merge",
+            "name": "uploadPdf",
+            "sortable": "false",
+            "style": "",
+            "width": ""
+        },
+        {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "false",
+            "id": "column_1",
+            "label": "status",
+            "name": "status",
+            "sortable": "true",
+            "style": "",
+            "width": ""
+        }
+    ],
+    "considerFilterWhenGetTotal": "",
+    "description": "",
+    "filters": [],
+    "hidePageSize": "",
+    "id": "list_uploadCoverFrom",
+    "name": "List - 03 Upload Cover Form",
+    "order": "1",
+    "orderBy": "dateCreated",
+    "pageSize": "0",
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "rowActions": [
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_0",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "callForm",
+                "hrefColumn": "id",
+                "hrefParam": "id",
+                "label": "Form",
+                "rules": [],
+                "target": "popup"
+            },
+            "type": "text"
+        },
+        {
+            "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+            "id": "rowAction_1",
+            "label": "Hyperlink",
+            "name": "Data List Hyperlink Action",
+            "properties": {
+                "confirmation": "",
+                "datalist_type": "row_action",
+                "href": "callProcess",
+                "hrefColumn": "id",
+                "hrefParam": "id",
+                "label": "Process Diagram",
+                "rules": [],
+                "target": "popup"
+            },
+            "type": "text"
+        }
+    ],
+    "showDataWhenFilterSet": "",
+    "showPageSizeSelector": "true",
+    "useSession": ""
+}

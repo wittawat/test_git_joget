@@ -1,0 +1,236 @@
+{
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.HtmlPage",
+                "properties": {
+                    "content": "<div class=\"ui-welcome\"><h1>Apps and Workflow Made Simple<\/h1><p>&nbsp;<\/p><div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left\"><img src=\"/jw/images/icon_idea.png\" width=\"120\" height=\"85\"/><\/div><div class=\"message\"><h3>Build apps, not just processes!<\/h3><p>Create full-fledged apps with support for data records management.<\/p><\/div><p>&nbsp;<\/p><div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left\"><img src=\"/jw/images/icon_rocket.png\" width=\"120\" height=\"85\"/><\/div><div class=\"message\"><h3>Increased Efficiency and Productivity<\/h3><p>Faster and more consistent completion of manual processes, and with minimal errors.<\/p><\/div><p>&nbsp;<\/p><div class=\"icon\" style=\"margin-right: 20px; margin-bottom: 20px; float: left; clear: left\"><img src=\"/jw/images/icon_cost.png\" width=\"120\" height=\"85\"/><\/div><div class=\"message\"><h3>Lowered Cost<\/h3><p>Employees can be guided through complex procedures, hence reducing the cost of training.<\/p><\/div><\/div>",
+                    "customId": "welcome",
+                    "id": "3B6F25A638EF40FFAD3C5DAAC41BA98F",
+                    "label": "Welcome"
+                }
+            }],
+            "properties": {
+                "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+                "label": "<i class='fa fa-home'><\/i> Home"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.RunProcess",
+                "properties": {
+                    "customId": "",
+                    "fieldPassover": "",
+                    "fieldPassoverMethod": "append",
+                    "id": "F64EAB6E2F7E43E39E05D9563230327F",
+                    "keyName": "",
+                    "label": "Start Workflow",
+                    "messageShowAfterComplete": "",
+                    "paramName": "",
+                    "processDefId": "process1",
+                    "redirectUrlAfterComplete": "",
+                    "runProcessDirectly": "Yes",
+                    "runProcessSubmitLabel": "",
+                    "showInPopupDialog": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "id": "category-E248134EA0BC4EED9831B1A6A088E972",
+                "label": "New Category"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.InboxMenu",
+                "properties": {
+                    "appFilter": "all",
+                    "assignment-customFooter": "",
+                    "assignment-customHeader": "",
+                    "buttonPosition": "bottomLeft",
+                    "customId": "",
+                    "id": "7387FD1FAFB340EAA6AC028F38A54DCA",
+                    "label": "Inbox",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "processId": "process1",
+                    "rowCount": "true",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "id": "category-AA6DCDCC2A8A4131BE0BE5AD674F87A8",
+                "label": "New Category"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                "properties": {
+                    "appFilter": "all",
+                    "assignment-customFooter": "",
+                    "assignment-customHeader": "",
+                    "customId": "",
+                    "datalistId": "list_uploadCoverFrom",
+                    "id": "CD56EF913A964AF484D906B5A0F49637",
+                    "keyName": "",
+                    "label": "Datalist Inbox",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "rowCount": "true",
+                    "showDetail": "",
+                    "showPopup": "",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "id": "category-A8FB05F88DA3413689A94D3177DD2F50",
+                "label": "New Category"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.DataListMenu",
+                "properties": {
+                    "buttonPosition": "bottomLeft",
+                    "checkboxPosition": "left",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "",
+                    "datalistId": "list_uploadCoverFrom",
+                    "id": "865077BC64A04E2FB13947112E5E6A46",
+                    "keyName": "",
+                    "label": "Report",
+                    "rowCount": "true",
+                    "selectionType": "multiple",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": ""
+                }
+            }],
+            "properties": {
+                "id": "category-a8c5cacb-ac178fd1-87aa2f00-235dec8f",
+                "label": "<i class='fa fa-tasks'><\/i>Manage 03 Upload Cover Form"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "cancelButtonLabel": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "callForm",
+                        "fieldPassover": "",
+                        "fieldPassoverMethod": "append",
+                        "formId": "uploadCoverFrom",
+                        "id": "055102D7B2924EC6A937397D000ED5C5",
+                        "keyName": "",
+                        "label": "Form",
+                        "loadDataWithKey": "",
+                        "messageShowAfterComplete": "",
+                        "paramName": "",
+                        "readonly": "Yes",
+                        "readonlyLabel": "",
+                        "redirectTargetOnCancel": "top",
+                        "redirectUrlAfterComplete": "",
+                        "redirectUrlOnCancel": "",
+                        "showInPopupDialog": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ProcessStatusMenu",
+                    "properties": {
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "callProcess",
+                        "eventClick": "",
+                        "id": "0E44351E72ED4C4CA95EEC8385ED7B72",
+                        "label": "Process Status",
+                        "layout": "path",
+                        "recordId": "#requestParam.id#",
+                        "showFutureActivities": "",
+                        "showProcessName": "",
+                        "showSkippedActivities": "",
+                        "usernameFormat": "name",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "viewPermission": "requester;performers;admin"
+                    }
+                }
+            ],
+            "properties": {
+                "comment": "",
+                "hide": "yes",
+                "id": "category-3074CE8812014417A5C3F3DB374978BA",
+                "label": "New Category",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "v",
+        "logoutText": "Logout",
+        "name": "Solution App",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "hideThisUserviewInAppCenter": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "theme": {
+            "className": "org.joget.plugin.enterprise.UniversalTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "LIME",
+                "buttonTextColor": "WHITE",
+                "css": "",
+                "disableHelpGuide": "",
+                "enableResponsiveSwitch": "true",
+                "fav_icon": "",
+                "fontColor": "BLACK",
+                "homeAttractBanner": "",
+                "horizontal_menu": "true",
+                "inbox": "current",
+                "js": "",
+                "loginPageBottom": "",
+                "loginPageTop": "",
+                "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "LIGHT_GREEN",
+                "profile": "",
+                "removeAssignmentTitle": "",
+                "shortcut": [],
+                "shortcutLinkLabel": "Shortcut",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
+                "userImage": "",
+                "userMenu": []
+            }
+        },
+        "userviewDescription": "",
+        "userview_thumbnail": ""
+    }}
+}
