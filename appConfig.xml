@@ -1,0 +1,23 @@
+<appDefinition>
+   <appId>solutionApp</appId>
+   <id>solutionApp</id>
+   <version></version>
+   <name>Solution App</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>endPoint</id>
+         <appId>solutionApp</appId>
+         <appVersion>1</appVersion>
+         <value>http://localhost:8081</value>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>UQYzsI05twO+lGcC3QBKUw2qkU0F0TsX784aU9dRuV4vrsYQjEpgoExELH+ytnKYNHsrvoFt1u4=</license>
+</appDefinition>

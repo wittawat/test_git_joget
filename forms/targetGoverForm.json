@@ -1,0 +1,60 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [{
+                "className": "org.joget.apps.form.lib.FileUpload",
+                "properties": {
+                    "attachment": "",
+                    "fileType": "",
+                    "fileTypeMsg": "Invalid file type",
+                    "id": "targetCover",
+                    "label": "Target Cover",
+                    "maxSize": "",
+                    "maxSizeMsg": "File size limit exceeded",
+                    "multiple": "",
+                    "padding": "",
+                    "permissionType": "",
+                    "readonly": "",
+                    "removeFile": "",
+                    "size": "",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    }
+                }
+            }],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section1",
+            "label": "Cover",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            }
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "targetGoverForm",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "00 Target Gover Form",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "solution"
+    }
+}
