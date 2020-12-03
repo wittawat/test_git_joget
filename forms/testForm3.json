@@ -22,7 +22,7 @@
                     "maxHeight": "",
                     "minSpareRows": "1",
                     "options": [{
-                        "format": "testForm2",
+                        "format": "",
                         "formatType": "",
                         "formula": "250 * 1",
                         "label": "",
