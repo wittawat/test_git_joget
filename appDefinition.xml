@@ -1,6 +1,6 @@
 <appDefinition>
    <id>solutionApp</id>
-   <version></version>
+   <version>1</version>
    <name>Solution App</name>
    <packageDefinitionList>
       <packageDefinition>
