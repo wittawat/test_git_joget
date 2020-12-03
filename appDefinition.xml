@@ -1,7 +1,6 @@
 <appDefinition>
-   <appId>solutionApp</appId>
    <id>solutionApp</id>
-   <version>1</version>
+   <version></version>
    <name>Solution App</name>
    <packageDefinitionList>
       <packageDefinition>
