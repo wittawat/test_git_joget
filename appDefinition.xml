@@ -1,6 +1,6 @@
 <appDefinition>
    <id>solutionApp</id>
-   <version></version>
+   <version>1</version>
    <name>Solution App</name>
    <packageDefinitionList>
       <packageDefinition>
@@ -8,17 +8,6 @@
          <id>solutionApp</id>
          <name>Solution App</name>
          <packageActivityFormMap>
-            <entry>
-               <string>process1::activityStep3</string>
-               <packageActivityForm>
-                  <processDefId>process1</processDefId>
-                  <activityDefId>activityStep3</activityDefId>
-                  <formId>uploadCoverFrom</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
             <entry>
                <string>process1::runProcess</string>
                <packageActivityForm>
@@ -28,6 +17,17 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>process1::activityStep3</string>
+               <packageActivityForm>
+                  <processDefId>process1</processDefId>
+                  <activityDefId>activityStep3</activityDefId>
+                  <formId>uploadCoverFrom</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -82,6 +82,15 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
+               <string>process1::requestor</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>requestor</participantId>
+                  <type>requester</type>
+                  <value>runProcess</value>
+               </packageParticipant>
+            </entry>
+            <entry>
                <string>process1::part3</string>
                <packageParticipant>
                   <processDefId>process1</processDefId>
@@ -97,15 +106,6 @@
                   <participantId>processStartWhiteList</participantId>
                   <type>role</type>
                   <value>loggedInUser</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>process1::requestor</string>
-               <packageParticipant>
-                  <processDefId>process1</processDefId>
-                  <participantId>requestor</participantId>
-                  <type>requester</type>
-                  <value>runProcess</value>
                </packageParticipant>
             </entry>
             <entry>
