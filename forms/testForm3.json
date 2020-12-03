@@ -16,7 +16,7 @@
         "description": "",
         "id": "testForm3",
         "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
-        "name": "06 Test Form",
+        "name": "07 Test Form 3",
         "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
         "tableName": "solution"
     }
