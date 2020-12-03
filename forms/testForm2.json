@@ -4,7 +4,27 @@
         "className": "org.joget.apps.form.model.Section",
         "elements": [{
             "className": "org.joget.apps.form.model.Column",
-            "elements": [],
+            "elements": [{
+                "className": "org.joget.apps.form.lib.TextField",
+                "properties": {
+                    "encryption": "",
+                    "id": "testF",
+                    "label": "TextField",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "readonly": "",
+                    "readonlyLabel": "",
+                    "size": "",
+                    "storeNumeric": "",
+                    "style": "",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "value": "250",
+                    "workflowVariable": ""
+                }
+            }],
             "properties": {"width": "100%"}
         }],
         "properties": {
@@ -15,9 +35,25 @@
     "properties": {
         "description": "",
         "id": "testForm2",
-        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "name": "05 - test Form2",
-        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "create",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
         "tableName": "solution"
     }
 }
