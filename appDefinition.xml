@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>solutionApp</appId>
    <id>solutionApp</id>
    <version>1</version>
    <name>Solution App</name>
@@ -82,15 +83,6 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
-               <string>process1::requestor</string>
-               <packageParticipant>
-                  <processDefId>process1</processDefId>
-                  <participantId>requestor</participantId>
-                  <type>requester</type>
-                  <value>runProcess</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>process1::part3</string>
                <packageParticipant>
                   <processDefId>process1</processDefId>
@@ -106,6 +98,15 @@
                   <participantId>processStartWhiteList</participantId>
                   <type>role</type>
                   <value>loggedInUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process1::requestor</string>
+               <packageParticipant>
+                  <processDefId>process1</processDefId>
+                  <participantId>requestor</participantId>
+                  <type>requester</type>
+                  <value>runProcess</value>
                </packageParticipant>
             </entry>
             <entry>
